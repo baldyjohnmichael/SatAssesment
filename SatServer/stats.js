@@ -59,12 +59,21 @@ alts = getAlt(mock_data)
 console.log(getMin(alts))
 console.log(getMax(alts))
 console.log(getAvg(alts))
+min = getMin(alts)
+max = getMax(alts)
+avg = getAvg(alts)
 
-var min_value = document.getElementById("min");
-document.getElementById("min").innerHTML = getMin(alts);
+min_str = "Min".concat(': ',min.toString())
+max_str = "Max".concat(': ', max.toString())
+avg_str = "Avg".concat(": ",avg.toString())
+x = min_str.concat(" | ", max_str, " | ", avg_str)
+module.exports = x;
 
-var max_value = document.getElementById("max");
-document.getElementById("max").innerHTML = getMax(alts);
+// var min_value = document.getElementById("min");
+// document.getElementById("min").innerHTML = getMin(alts);
 
-var avg_value = document.getElementById("avg");
-document.getElementById("avg").innerHTML = getAvg(alts);
+// var max_value = document.getElementById("max");
+// document.getElementById("max").innerHTML = getMax(alts);
+
+// var avg_value = document.getElementById("avg");
+// document.getElementById("avg").innerHTML = getAvg(alts);

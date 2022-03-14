@@ -70,10 +70,16 @@ function statusCheck(altitudes){
         }
     }
 }
+function main(){
 alts = getAltitudes(mock_data)
-document.getElementById("status").innerHTML = statusCheck(alts);
+// document.getElementById("status").innerHTML = statusCheck(alts);
 
 console.log("Last minute Alts")
 console.log(getAvg(getLastMinute(alts)))
 console.log("Second Last Minute alts")
 console.log(getAvg(getSecondLastMinute(alts)))
+
+return statusCheck(alts)
+}
+x = main()
+module.exports = x;
