@@ -5,6 +5,10 @@ Latest version of Node.js found here https://nodejs.org/en/download/
 
 Latest version of Axios download via npm install axios
 
+Latest version of nodemon
+
+Latest version of Express
+
 
 ##To run the node js script, 
 
@@ -17,6 +21,7 @@ Type in node sat.js and hit enter
 
 To view /stats and /health
 
-To view /stats copy the path to stats.html and paste it into the address bar of your browser. 
+First start a local server by running "nodemon index.js" in the SatServer directory. 
 
-To view /health copy the path to heath.html and paste it into the address bar of your browser. 
+No go to your browser and type in "http://localhost:3000/stats" to view /stats and "http://localhost:3000/health" to view /health
+
